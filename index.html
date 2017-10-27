@@ -7,7 +7,6 @@
     <title>Video game sales dashboard</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css"/>
-
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
@@ -15,23 +14,43 @@
     
 </head>
 <body>
-    <div id="pub-sales">Sales per publisher</div>
+    <div id="pub-sales"></div>
+    
     <script>
     queue()
         .defer(d3.csv, "data/vgsales.csv")
         .await(makeGraphs);
-    function makeGraphs(error, salaryData) {
-        var ndx = crossfilter(salaryData);
-        var gender_dim = ndx.dimension(dc.pluck('gender'));
-        var count_by_gender = gender_dim.group();
+    function makeGraphs(error, salesData) {
+        var ndx = crossfilter(salesData);
         
+        salesData.forEach(function(d){
+            d.Global_Sales = parseFloat(d.Global_Sales);
+        });
+        
+        var publisherdim = ndx.dimension(dc.pluck("Publisher"));
+        var totalsales = publisherdim.group().reduceSum(dc.pluck("Global_Sales"));
+        
+        // console.log(totalsales.all());
+
+        dc.barChart("#pub-sales")
+            .height(300)
+            .width(1800)
+            .margins({top: 10, right: 10, bottom: 30, left: 10})
+            .dimension(publisherdim)
+            .group(totalsales)
+            .transitionDuration(500)
+            .x(d3.scale.ordinal())
+            .xUnits(dc.units.ordinal)
+            .xAxisLabel("Publisher")
+            .yAxis().ticks(2);
+
         dc.renderAll();
     }
     </script>
     
-    <div id="country-sales">Sales per country</div>
+    <!--<div id="country-sales">Sales per country</div>-->
     
-    <div id="genre-sales">Sales per genre</div>
+    <!--<div id="genre-sales">Sales per genre</div>-->
     
 </body>
 </html>
