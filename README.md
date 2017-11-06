@@ -1,5 +1,19 @@
 Stream 2 project to plot Video game sales.
 
+Live link:
+http://
+
+The purpose of the project is to reflect the popularity of game sales using the top five home console manufacturers.
+It will show how popular particular styles of games are and which manufacturer is best at making these types of game.
+
+
+
+
+
+
+
+Work to complete:
+
 Restricted data to manufacturers Sega, Nintendo, Sony Mocrosoft, and NeoGeo as other data was present but blank.
 Searched for misssing data online and populated as much as possible from other sources (release dates and publishers).
 Shortened publishers names and combined sub entities to shorten the list..

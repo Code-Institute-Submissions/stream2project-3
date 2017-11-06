@@ -1,13 +1,16 @@
-
     queue()
-        .defer(d3.csv, "../../data/vgsales.csv")
+        .defer(d3.json, "/data")
         .await(makeGraphs);
+        
     function makeGraphs(error, salesData) {
     var ndx = crossfilter(salesData);
     
     salesData.forEach(function(d){
         d.Global = parseFloat(d.Global);
     });
+    
+// Pie Chart
+        
 // Publisher Sales
     var publisherdim = ndx.dimension(dc.pluck("Publisher"));
     var totalsales = publisherdim.group().reduceSum(dc.pluck("Global"));
@@ -30,10 +33,11 @@
 
     dc.barChart("#manufacturer-sales")
         .height(300)
-        .width(500)
+        .width(600)
         .margins({top: 10, right: 10, bottom: 30, left: 10})
         .dimension(manufacturerdim)
         .group(totalsales)
+        // .ordinalColors(["green","black","red","light blue","blue"])
         .transitionDuration(500)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
@@ -46,7 +50,7 @@
 
     dc.barChart("#genre-sales")
         .height(300)
-        .width(500)
+        .width(600)
         .margins({top: 10, right: 10, bottom: 30, left: 10})
         .dimension(genredim)
         .group(totalsales)
@@ -62,7 +66,7 @@
 
     dc.barChart("#year-sales")
         .height(300)
-        .width(1000)
+        .width(1200)
         .margins({top: 10, right: 10, bottom: 30, left: 10})
         .dimension(yeardim)
         .group(totalsales)
