@@ -651,7 +651,6 @@ Tetris Plus,Sony,PS,1996,Puzzle,JVC,2.1,0.24,0,0.07,2.4
 Halo - Combat Evolved Anniversary,Microsoft,X360,2011,Shooter,Microsoft,1.44,0.7,0.04,0.22,2.4
 Pro Wrestling,Nintendo,NES,1987,Fighting,Nintendo,0.77,0.18,1.42,0.03,2.4
 NBA 2K16,Microsoft,XOne,2015,Sports,Take-Two,2,0.15,0,0.25,2.4
- ,Sega,GEN,1993,,Acclaim,1.78,0.53,0,0.08,2.39
 Madden NFL 11,Sony,PS3,2010,Sports,EA,2.05,0.15,0,0.2,2.39
 Frogger's Adventures - Temple of the Frog,Nintendo,GBA,2001,Adventure,Konami,2.15,0.18,0,0.07,2.39
 Crash Bandicoot N. Sane Trilogy,Sony,PS4,2017,Platform,Activision,0.61,1.35,0.05,0.37,2.38
@@ -3472,7 +3471,7 @@ Puzzle & Dragons Z + Super Mario Bros. Edition,Nintendo,3DS,2015,Puzzle,Nintendo
 Tetris Party Deluxe,Nintendo,Wii,2010,Puzzle,Nintendo,0.33,0.16,0.02,0.05,0.56
 No More Heroes,Nintendo,Wii,2007,Action,Rising Star,0.29,0.17,0.04,0.05,0.56
 ESPN NFL Football,Sony,PS2,2003,Sports,Sega,0.27,0.21,0,0.07,0.56
-"Monsters, Inc. Scream Team",Sony,PS,2001,Platform,Sony,0.31,0.21,0,0.04,0.56
+Monsters Inc - Scream Team,Sony,PS,2001,Platform,Sony,0.31,0.21,0,0.04,0.56
 Hot Shots Golf - World Invitational,Sony,PSV,2011,Sports,Sony,0.15,0.11,0.26,0.05,0.56
 God of War - Origins Collection,Sony,PS3,2011,Action,Sony,0.39,0.08,0.02,0.06,0.56
 Gravity Rush,Sony,PSV,2012,Action,Sony,0.21,0.17,0.09,0.08,0.56
@@ -5017,7 +5016,7 @@ Formula 1 Championship Edition,Sony,PS,1997,Racing,Psygnosis,0.06,0.04,0.23,0.02
 Sniper Elite 4,Sony,PS4,2017,Shooter,Rebellion,0.08,0.22,0,0.06,0.36
 Digging for Dinosaurs,Nintendo,DS,2010,Action,Scholastic,0.33,0,0,0.02,0.36
 J-League Pro Soccer Club o Tsukurou!,Sega,DC,1999,Sports,Sega,0,0,0.36,0,0.36
-J-League Pro Soccer Club o Tsukurou '04,Sony,PS2,2004,Sports,Sega,0,0,0.36,0,0.36
+J-League Pro Soccer Club o Tsukurou 04,Sony,PS2,2004,Sports,Sega,0,0,0.36,0,0.36
 Ryu Ga Gotoku Kenzan!,Sony,PS3,2008,Adventure,Sega,0,0,0.36,0,0.36
 Yakuza 6,Sony,PS4,2016,Action,Sega,0,0,0.36,0,0.36
 ESPN NFL Football,Microsoft,XB,2003,Sports,Sega,0.27,0.08,0,0.01,0.36
@@ -5783,11 +5782,11 @@ Chibi-Robo! Zip Lash,Nintendo,3DS,2015,Platform,Nintendo,0.11,0.09,0.07,0.02,0.2
 Odin Sphere - Leifthrasir,Sony,PS4,2016,Role-Playing,Nippon,0.12,0.04,0.09,0.04,0.29
 Little King's Story,Nintendo,Wii,2009,Strategy,Rising Star,0.14,0.1,0.02,0.02,0.29
 Harvest Moon - Magical Melody,Nintendo,Wii,2008,Simulation,Rising Star,0.23,0.03,0,0.02,0.29
-"Sakura Wars 4 - Koi Seyo,Otome",Sega,DC,2002,Adventure,Sega,0,0,0.29,0,0.29
+Sakura Wars 4 - Koi Seyo Otome,Sega,DC,2002,Adventure,Sega,0,0,0.29,0,0.29
 Kurohyou - Ryu ga Gotoku Shinshou,Sony,PSP,2010,Adventure,Sega,0,0,0.29,0,0.29
 Feel the Magic XY/XX,Nintendo,DS,2004,Puzzle,Sega,0.17,0,0.1,0.02,0.29
 Sonic & All-Stars Racing Transformed,Nintendo,3DS,2012,Racing,Sega,0.12,0.15,0,0.02,0.29
-"Sakura Wars - So Long, My Love",Sony,PS2,2005,Role-Playing,Sega,0.07,0.05,0.15,0.02,0.29
+Sakura Wars - So Long My Love,Sony,PS2,2005,Role-Playing,Sega,0.07,0.05,0.15,0.02,0.29
 Alien - Isolation,Microsoft,X360,2014,Shooter,Sega,0.16,0.11,0,0.03,0.29
 Sonic Boom - Shattered Crystal,Nintendo,3DS,2014,Action,Sega,0.17,0.09,0,0.03,0.29
 MLB Pennant Race,Sony,PS,1996,Sports,Sony,0.16,0.11,0,0.02,0.29
@@ -6423,7 +6422,7 @@ The Legend of Heroes - Trails of Cold Steel II,Sony,PSV,2014,Role-Playing,Nippon
 Danganronpa Another Episode - Ultra Despair Girls,Sony,PSV,2014,Action,Nippon,0.09,0.01,0.12,0.03,0.25
 MRC - Multi-Racing Championship,Nintendo,N64,1997,Racing,Ocean,0.2,0.05,0,0,0.25
 WipEout XL,Sony,PS,1996,Racing,Psygnosis,0.14,0.1,0,0.02,0.25
-K-ON! Houkago Live!!,Sony,PSP,2010,Misc,Sega,0,0,0.25,0,0.25
+K-ON - Houkago Live,Sony,PSP,2010,Misc,Sega,0,0,0.25,0,0.25
 Billy Hatcher and the Giant Egg,Nintendo,GC,2003,Platform,Sega,0.19,0.05,0,0.01,0.25
 World Series Baseball 2K3,Sony,PS2,2003,Sports,Sega,0.12,0.1,0,0.03,0.25
 Sega Rally Revo,Sony,PSP,2007,Racing,Sega,0.03,0.15,0,0.07,0.25
@@ -8694,7 +8693,7 @@ Pipe Mania,Sony,PS2,2008,Puzzle,Empire,0.07,0.05,0,0.02,0.14
 Farming Simulator 2012,Nintendo,3DS,2012,Action,Excalibur Publishing,0,0.12,0,0.01,0.14
 Farming Simulator 2013,Sony,PS3,2013,Simulation,Focus Home,0,0.09,0.02,0.02,0.14
 Pro Cycling Manager 2016,Sony,PS4,2016,Sports,Focus Home,0,0.12,0,0.02,0.14
-"Lunar 2 - Eternal Blue(sales, but wrong system)",Sega,GEN,1994,Role-Playing,Game Arts,0,0,0.14,0,0.14
+Lunar 2 - Eternal Blue,Sega,GEN,1994,Role-Playing,Game Arts,0,0,0.14,0,0.14
 Project V6,Sony,PS,1998,Strategy,GE,0,0,0.13,0.01,0.14
 Shadow Hearts - From The New World,Sony,PS2,2005,Role-Playing,Ghostlight,0.07,0.06,0,0.02,0.14
 Fox Sports Golf '99,Sony,PS,1997,Sports,Gremlin,0.08,0.05,0,0.01,0.14
@@ -10236,7 +10235,7 @@ Terraria,Sony,PSV,2013,Action,Screenlife,0,0.01,0.09,0,0.1
 Beach Spikers - Virtua Beach Volleyball,Nintendo,GC,2002,Sports,Sega,0.08,0.02,0,0,0.1
 Culdcept DS,Nintendo,DS,2008,Strategy,Sega,0,0,0.1,0,0.1
 Bleach - Dark Souls (JP sales),Nintendo,DS,2007,Fighting,Sega,0,0,0.1,0,0.1
-"Sakura Wars 2 - Kimi, Shinitamou koto Nakare",Sega,DC,2000,Adventure,Sega,0,0,0.1,0,0.1
+Sakura Wars 2 - Kimi Shinitamou koto Nakare,Sega,DC,2000,Adventure,Sega,0,0,0.1,0,0.1
 Shining Force EXA,Sony,PS2,2007,Role-Playing,Sega,0,0,0.1,0,0.1
 World Snooker Championship 2007,Sony,PS3,2007,Sports,Sega,0,0.1,0,0,0.1
 Initial D - Street Stage,Sony,PSP,2006,Racing,Sega,0,0,0.1,0,0.1
@@ -13463,7 +13462,6 @@ MuvLuv Double Pack,Sony,PSV,2016,Adventure,5pb,0,0,0.03,0,0.03
 SX Superstar,Nintendo,GC,2003,Racing,Acclaim,0.03,0.01,0,0,0.03
 Dakar 2 - The World's Ultimate Rally,Nintendo,GC,2003,Racing,Acclaim,0.02,0.01,0,0,0.03
 Dave Mirra Freestyle BMX 3,Nintendo,GBA,2002,Sports,Acclaim,0.02,0.01,0,0,0.03
- ,Sega,GEN,1993,,Acclaim,0,0,0.03,0,0.03
 Batman Forever - The Arcade Game,Sony,PS,1996,Action,Acclaim,0.02,0.01,0,0,0.03
 DragonHeart - Fire & Steel,Sony,PS,1996,Action,Acclaim,0.02,0.01,0,0,0.03
 Ducati World Racing Challenge,Sony,PS,2001,Racing,Acclaim,0.02,0.01,0,0,0.03

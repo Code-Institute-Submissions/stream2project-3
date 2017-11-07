@@ -1,16 +1,42 @@
-div {
-    background-color: #dddddd;
-    border: 5px;
-
+body{
+    background-color: #000022;
 }
+
+div {
+    display: inline-block;
+}
+
 #piechart{
     text-align: center;
 }
 
-.aligncenter{
+.col-centered{
     float: none;
     margin: 0 auto;
 }
+
 .row{
     width: 100%;
+}
+
+.filterreset{
+    /*font-style: none;*/
+    margin: 0px;
+    font-size: large;
+    text-align: center;
+}
+
+.whitetext{
+    color:white;
+}
+
+.dc-chart .axis line, .dc-chart .axis path {
+    stroke: white;
+}
+
+.dc-chart g.row text {fill: white;}
+
+svg text {
+    fill: white;
+
 }
