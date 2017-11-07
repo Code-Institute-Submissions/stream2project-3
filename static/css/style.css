@@ -1,5 +1,16 @@
 div {
     background-color: #dddddd;
     border: 5px;
-    border-radius:5%;
+
+}
+#piechart{
+    text-align: center;
+}
+
+.aligncenter{
+    float: none;
+    margin: 0 auto;
+}
+.row{
+    width: 100%;
 }
