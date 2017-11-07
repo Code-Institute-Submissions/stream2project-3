@@ -1,7 +1,10 @@
 body{
-    background-color: #000022;
+    background-color: #000000;
 }
-
+h1{
+    text-align: center;
+    color:white;
+}
 div {
     display: inline-block;
 }
@@ -28,6 +31,15 @@ div {
 
 .whitetext{
     color:white;
+}
+.manusales{
+    /*padding: 50px;*/
+}
+.pubsales{
+    padding: 0px;
+}
+.yearsales{
+    padding-left: 0px;
 }
 
 .dc-chart .axis line, .dc-chart .axis path {

@@ -19,22 +19,23 @@
 
 </head>
 <body>
+    <h1>Video game sales dashboard</h1>
     <div class="row col-12 filterreset">
         <a href="javascript:dc.filterAll(); dc.renderAll();">Reset All Filters</a>
     </div>
     <div class="col-centered">
         <div class="row col-12">
+            <div class="col-xs-6 manusales" id="manufacturer-sales" class="chart"></div>
             <div class="col-xs-6" id="piechart"></div>
-            <div class="col-xs-6" id="manufacturer-sales" class="chart"></div>
         </div>
         <div class="row col-12 col-centered whitetext">
-            <div class="col-xs-12" id="year-sales"></div>
+            <div class="col-xs-12 yearsales" id="year-sales"></div>
         </div>
         <div class="row col-12">
             <div class="col-md-12" id="genre-sales"></div>
         </div>
         <div class="row col-12">
-            <div class="col-md-12" id="pub-sales"></div>
+            <div class="col-md-12 pubsales" id="pub-sales"></div>
         </div>
     </div>
 </body>

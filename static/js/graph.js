@@ -8,17 +8,6 @@
     salesData.forEach(function(d){
         d.Global = parseFloat(d.Global);
     });
-    
-// Pie Chart
-    var manupie_dim = ndx.dimension(dc.pluck("Manufacturer"));
-    var totsales = manupie_dim.group().reduceSum(dc.pluck("Global"));
-    
-    dc.pieChart("#piechart")
-        .height(300)
-        .radius(150)
-        .transitionDuration(1500)
-        .dimension(manupie_dim)
-        .group(totsales);
 
 // Manufacturer Sales
     var manufacturerdim = ndx.dimension(dc.pluck("Manufacturer"));
@@ -36,7 +25,18 @@
         .xUnits(dc.units.ordinal)
         .xAxisLabel("Manufacturer")
         .yAxis().ticks(2);
-
+    
+// Pie Chart
+    var manupie_dim = ndx.dimension(dc.pluck("Manufacturer"));
+    var totsales = manupie_dim.group().reduceSum(dc.pluck("Global"));
+    
+    dc.pieChart("#piechart")
+        .height(300)
+        .radius(150)
+        .transitionDuration(1500)
+        .dimension(manupie_dim)
+        .group(totsales);
+        
 // Year Sales
     var yeardim = ndx.dimension(dc.pluck("Year"));
     var totalsales = yeardim.group().reduceSum(dc.pluck("Global"));
