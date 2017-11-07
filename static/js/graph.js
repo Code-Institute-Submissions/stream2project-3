@@ -9,7 +9,7 @@
         d.Global = parseFloat(d.Global);
     });
 
-// Manufacturer Sales
+// Manufacturer Sales - Bar chart
     var manufacturerdim = ndx.dimension(dc.pluck("Manufacturer"));
     var totalsales = manufacturerdim.group().reduceSum(dc.pluck("Global"));
 
@@ -26,7 +26,7 @@
         .xAxisLabel("Manufacturer")
         .yAxis().ticks(2);
     
-// Pie Chart
+// Manufacturer sales - Pie Chart
     var manupie_dim = ndx.dimension(dc.pluck("Manufacturer"));
     var totsales = manupie_dim.group().reduceSum(dc.pluck("Global"));
     
@@ -37,7 +37,7 @@
         .dimension(manupie_dim)
         .group(totsales);
         
-// Year Sales
+// Year Sales - Bar chart
     var yeardim = ndx.dimension(dc.pluck("Year"));
     var totalsales = yeardim.group().reduceSum(dc.pluck("Global"));
 
@@ -53,13 +53,13 @@
         .xAxisLabel("Year")
         .yAxis().ticks(2);
 
-// Genre Sales
+// Genre Sales - Bar chart
     var genredim = ndx.dimension(dc.pluck("Genre"));
     var totalsales = genredim.group().reduceSum(dc.pluck("Global"));
 
     dc.barChart("#genre-sales")
         .height(500)
-        .width(850)
+        .width(840)
         .margins({top: 10, right: 10, bottom: 30, left: 10})
         .dimension(genredim)
         .group(totalsales)
