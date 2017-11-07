@@ -5,6 +5,14 @@ h1{
     text-align: center;
     color:white;
 }
+h2{
+    text-align: left;
+    color:white;
+}
+h3{
+    text-align: left;
+    color:white;
+}
 div {
     display: inline-block;
 }

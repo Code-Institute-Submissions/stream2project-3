@@ -59,7 +59,7 @@
 
     dc.barChart("#genre-sales")
         .height(500)
-        .width(800)
+        .width(850)
         .margins({top: 10, right: 10, bottom: 30, left: 10})
         .dimension(genredim)
         .group(totalsales)
