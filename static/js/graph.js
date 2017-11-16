@@ -12,6 +12,9 @@
 // Manufacturer Sales - Bar chart
     var manufacturerdim = ndx.dimension(dc.pluck("Manufacturer"));
     var totalsales = manufacturerdim.group().reduceSum(dc.pluck("Global"));
+    // var ConsoleColors = d3.scale.ordinal()
+    //     .domain(["Nintendo", "Playstation", "Microsoft", "Sega", "NeoGeo"])
+    // 	.range(["Red", "Blue", "Green", "Blue", "Yellow"])
 
     dc.barChart("#manufacturer-sales")
         .height(500)
@@ -19,6 +22,7 @@
         .margins({top: 10, right: 10, bottom: 30, left: 10})
         .dimension(manufacturerdim)
         .group(totalsales)
+        // .colors(ConsoleColors)
         // .ordinalColors(["green","black","red","light blue","blue"])
         .transitionDuration(500)
         .x(d3.scale.ordinal())
@@ -29,10 +33,14 @@
 // Manufacturer sales - Pie Chart
     var manupie_dim = ndx.dimension(dc.pluck("Manufacturer"));
     var totsales = manupie_dim.group().reduceSum(dc.pluck("Global"));
-    
+    var ConsoleColors = d3.scale.ordinal()
+        .domain(["Nintendo", "Sony", "Microsoft", "Sega", "NeoGeo"])
+    	.range(["Red", "Grey", "Green", "Blue", "Yellow"])
+    	
     dc.pieChart("#piechart")
         .height(300)
         .radius(150)
+        .colors(ConsoleColors)
         .transitionDuration(1500)
         .dimension(manupie_dim)
         .group(totsales);
