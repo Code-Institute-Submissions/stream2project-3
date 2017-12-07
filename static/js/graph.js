@@ -1,7 +1,7 @@
     queue()
         .defer(d3.json, "/data")
         .await(makeGraphs);
-        
+
     function makeGraphs(error, salesData) {
     var ndx = crossfilter(salesData);
     
@@ -12,9 +12,7 @@
 // Manufacturer Sales - Bar chart
     var manufacturerdim = ndx.dimension(dc.pluck("Manufacturer"));
     var totalsales = manufacturerdim.group().reduceSum(dc.pluck("Global"));
-    // var ConsoleColors = d3.scale.ordinal()
-    //     .domain(["Nintendo", "Playstation", "Microsoft", "Sega", "NeoGeo"])
-    // 	.range(["Red", "Blue", "Green", "Blue", "Yellow"])
+
 
     dc.barChart("#manufacturer-sales")
         .height(500)
@@ -22,13 +20,13 @@
         .margins({top: 10, right: 10, bottom: 30, left: 10})
         .dimension(manufacturerdim)
         .group(totalsales)
-        // .colors(ConsoleColors)
-        // .ordinalColors(["green","black","red","light blue","blue"])
+
         .transitionDuration(500)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .xAxisLabel("Manufacturer")
-        .yAxis().ticks(2);
+        .yAxis().ticks(2)
+        ;
     
 // Manufacturer sales - Pie Chart
     var manupie_dim = ndx.dimension(dc.pluck("Manufacturer"));
@@ -89,10 +87,7 @@
             .cap(100)
             .othersGrouper(false)
             .xAxis().ticks(7);
-            
 
-
- 
     dc.renderAll();
 }    
 

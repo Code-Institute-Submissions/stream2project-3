@@ -2,9 +2,14 @@ body{
     background-image: url("../media/bg.png");
     background-color: #000000;
 }
+
 h1{
     text-align: center;
+    background-color: #1f77b4;
     color:white;
+    line-height: 2;
+    margin:0;
+    font-weight: bolder;
 }
 h2{
     text-align: left;
@@ -17,7 +22,50 @@ h3{
 div {
     display: inline-block;
 }
+hr{
+    background-color: #1f77b4;
+    color: #1f77b4;
+}
+.tophr{
+    color: black;
+    margin: 0;
+}
+section{
+    padding: 20px;
+    background-color: black;
+    color:white;
+    border: dotted;
+    border-color: #1f77b4;
+}
+article{
+    text-align: center;
+    font-size: 1.25em;
+}
 
+a, a:visited{
+    text-decoration: none;
+    color:black;
+}
+a:hover, a:focus{
+    text-decoration: none;
+    color: white;
+}
+button{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-color: #1f77b4;
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+button:hover, a:visited, a:focus{
+    background-color: #1f77b4;
+    border-color: white;
+    color:white;
+}
+button a:visited{
+    color:white;
+}
 #piechart{
     text-align: center;
 }
@@ -42,7 +90,7 @@ div {
     color:white;
 }
 .manusales{
-    /*padding: 50px;*/
+    font-size: 1.5em;
 }
 .pubsales{
     padding: 0px;
@@ -60,4 +108,9 @@ div {
 svg text {
     fill: white;
 
+}
+
+/* Bootstrap overwrite */
+section.row.col-12{
+    margin: 0;
 }

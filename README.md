@@ -6,11 +6,16 @@ http://
 The purpose of the project is to reflect the popularity of game sales using the top five home console manufacturers.
 It will show how popular particular styles of games are and which manufacturer is best at making these types of game.
 
-
-
-
-
-
+Tools used:
+DC
+D3
+Python3
+MongoDB
+Flask
+Javascript
+HTML5
+CSS3
+GitHub
 
 Work to complete:
 
