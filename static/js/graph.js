@@ -27,17 +27,17 @@
         	chart1.selectAll(".bar:nth-child(1)").style("fill", "Green");
         	chart1.selectAll(".bar:nth-child(2)").style("fill", "Yellow");
         	chart1.selectAll(".bar:nth-child(3)").style("fill", "Red");
-        	chart1.selectAll(".bar:nth-child(4)").style("fill", "Blue");
-        	chart1.selectAll(".bar:nth-child(5)").style("fill", "Grey");
+        	chart1.selectAll(".bar:nth-child(4)").style("fill", "White");
+        	chart1.selectAll(".bar:nth-child(5)").style("fill", "Blue");
         })
-            .yAxis().ticks(5);
+            .yAxis().ticks(8);
             
 // Manufacturer sales - Pie Chart
     var manupie_dim = ndx.dimension(dc.pluck("Manufacturer"));
     var totsales = manupie_dim.group().reduceSum(dc.pluck("Global"));
     var ConsoleColors = d3.scale.ordinal()
         .domain(["Nintendo", "Sony", "Microsoft", "Sega", "NeoGeo"])
-    	.range(["Red", "Grey", "Green", "Blue", "Yellow"]);
+    	.range(["Red", "Blue", "Green", "White", "Yellow"]);
     	
     dc.pieChart("#piechart")
         .height(300)
