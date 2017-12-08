@@ -23,27 +23,15 @@
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .xAxisLabel("Manufacturer")
-        .yAxis().ticks(5);
-
-    // dc.barChart("#manufacturer-sales")
-    //     .height(500)
-    //     .width(500)
-    //     .margins({top: 10, right: 10, bottom: 30, left: 10})
-    //     .dimension(manufacturerdim)
-    //     .group(totalsales)
-    //     .transitionDuration(500)
-    //     .x(d3.scale.ordinal())
-    //     .xUnits(dc.units.ordinal)
-    //     .xAxisLabel("Manufacturer")
-    //     .yAxis().ticks(2)
-    //     .on("renderlet", function(chart1){
-    //     	chart1.selectAll(".bar:nth-child(1)").style("fill", "#006837");
-    //     	chart1.selectAll(".bar:nth-child(2)").style("fill", "#a6d96a");
-    //     	chart1.selectAll(".bar:nth-child(3)").style("fill", "#fee08b");
-    //     	chart1.selectAll(".bar:nth-child(4)").style("fill", "#fee08b");
-    //     	chart1.selectAll(".bar:nth-child(5)").style("fill", "#006837");
-    //     });
-    
+        .on("renderlet", function(chart1){
+        	chart1.selectAll(".bar:nth-child(1)").style("fill", "Green");
+        	chart1.selectAll(".bar:nth-child(2)").style("fill", "Yellow");
+        	chart1.selectAll(".bar:nth-child(3)").style("fill", "Red");
+        	chart1.selectAll(".bar:nth-child(4)").style("fill", "Blue");
+        	chart1.selectAll(".bar:nth-child(5)").style("fill", "Grey");
+        })
+            .yAxis().ticks(5);
+            
 // Manufacturer sales - Pie Chart
     var manupie_dim = ndx.dimension(dc.pluck("Manufacturer"));
     var totsales = manupie_dim.group().reduceSum(dc.pluck("Global"));
