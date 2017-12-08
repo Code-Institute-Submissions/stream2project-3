@@ -13,27 +13,43 @@
     var manufacturerdim = ndx.dimension(dc.pluck("Manufacturer"));
     var totalsales = manufacturerdim.group().reduceSum(dc.pluck("Global"));
 
-
     dc.barChart("#manufacturer-sales")
         .height(500)
         .width(500)
         .margins({top: 10, right: 10, bottom: 30, left: 10})
         .dimension(manufacturerdim)
         .group(totalsales)
-
         .transitionDuration(500)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .xAxisLabel("Manufacturer")
-        .yAxis().ticks(2)
-        ;
+        .yAxis().ticks(5);
+
+    // dc.barChart("#manufacturer-sales")
+    //     .height(500)
+    //     .width(500)
+    //     .margins({top: 10, right: 10, bottom: 30, left: 10})
+    //     .dimension(manufacturerdim)
+    //     .group(totalsales)
+    //     .transitionDuration(500)
+    //     .x(d3.scale.ordinal())
+    //     .xUnits(dc.units.ordinal)
+    //     .xAxisLabel("Manufacturer")
+    //     .yAxis().ticks(2)
+    //     .on("renderlet", function(chart1){
+    //     	chart1.selectAll(".bar:nth-child(1)").style("fill", "#006837");
+    //     	chart1.selectAll(".bar:nth-child(2)").style("fill", "#a6d96a");
+    //     	chart1.selectAll(".bar:nth-child(3)").style("fill", "#fee08b");
+    //     	chart1.selectAll(".bar:nth-child(4)").style("fill", "#fee08b");
+    //     	chart1.selectAll(".bar:nth-child(5)").style("fill", "#006837");
+    //     });
     
 // Manufacturer sales - Pie Chart
     var manupie_dim = ndx.dimension(dc.pluck("Manufacturer"));
     var totsales = manupie_dim.group().reduceSum(dc.pluck("Global"));
     var ConsoleColors = d3.scale.ordinal()
         .domain(["Nintendo", "Sony", "Microsoft", "Sega", "NeoGeo"])
-    	.range(["Red", "Grey", "Green", "Blue", "Yellow"])
+    	.range(["Red", "Grey", "Green", "Blue", "Yellow"]);
     	
     dc.pieChart("#piechart")
         .height(300)
@@ -47,9 +63,14 @@
     var yeardim = ndx.dimension(dc.pluck("Year"));
     var totalsales = yeardim.group().reduceSum(dc.pluck("Global"));
 
-    dc.barChart("#year-sales")
+// Year Sales - Line chart
+    var yeardim = ndx.dimension(dc.pluck("Year"));
+    var totalsales = yeardim.group().reduceSum(dc.pluck('Global'));
+// ,'Europe','Japan','RestOfWorld','NorthAmerica'
+    dc.lineChart("#year-sales")
         .height(300)
         .width(1200)
+        // .colors(['#6094DB','#BAFEA3','#FF4848','#44B4D5','#ffffff'])
         .margins({top: 10, right: 10, bottom: 30, left: 10})
         .dimension(yeardim)
         .group(totalsales)
@@ -58,6 +79,19 @@
         .xUnits(dc.units.ordinal)
         .xAxisLabel("Year")
         .yAxis().ticks(2);
+
+    // dc.barChart("#year-sales")
+    //     .height(300)
+    //     .width(1200)
+    //     .margins({top: 10, right: 10, bottom: 30, left: 10})
+    //     .dimension(yeardim)
+    //     .group(totalsales)
+    //     .transitionDuration(500)
+    //     .x(d3.scale.ordinal())
+    //     .xUnits(dc.units.ordinal)
+    //     .xAxisLabel("Year")
+    //     .yAxis().ticks(2);
+
 
 // Genre Sales - Bar chart
     var genredim = ndx.dimension(dc.pluck("Genre"));
