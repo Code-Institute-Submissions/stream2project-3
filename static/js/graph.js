@@ -26,9 +26,9 @@
         .on("renderlet", function(chart1){
         	chart1.selectAll(".bar:nth-child(1)").style("fill", "Green");
         	chart1.selectAll(".bar:nth-child(2)").style("fill", "Yellow");
-        	chart1.selectAll(".bar:nth-child(3)").style("fill", "#b92228");
+        	chart1.selectAll(".bar:nth-child(3)").style("fill", "#d12228");
         	chart1.selectAll(".bar:nth-child(4)").style("fill", "White");
-        	chart1.selectAll(".bar:nth-child(5)").style("fill", "#35426e");
+        	chart1.selectAll(".bar:nth-child(5)").style("fill", "#3542a0");
         })
             .yAxis().ticks(8);
             
@@ -37,7 +37,7 @@
     var totsales = manupie_dim.group().reduceSum(dc.pluck("Global"));
     var ConsoleColors = d3.scale.ordinal()
         .domain(["Nintendo", "Sony", "Microsoft", "Sega", "NeoGeo"])
-    	.range(["#b92228", "#35426e", "Green", "White", "Yellow"]);
+    	.range(["#d12228", "#3542a0", "Green", "White", "Yellow"]);
     	
     dc.pieChart("#piechart")
         .height(300)
@@ -68,17 +68,7 @@
         .xAxisLabel("Year")
         .yAxis().ticks(2);
 
-    // dc.barChart("#year-sales")
-    //     .height(300)
-    //     .width(1200)
-    //     .margins({top: 10, right: 10, bottom: 30, left: 10})
-    //     .dimension(yeardim)
-    //     .group(totalsales)
-    //     .transitionDuration(500)
-    //     .x(d3.scale.ordinal())
-    //     .xUnits(dc.units.ordinal)
-    //     .xAxisLabel("Year")
-    //     .yAxis().ticks(2);
+
 
 
 // Genre Sales - Bar chart
