@@ -10,15 +10,17 @@ From the dataset, I suspect that the downturn in game sales is a matter of onlin
 
 All graphs will change dynamically wit each other, and a reset has been included at the top of the page.<br/>
 Mobile first design is not a requirement for this project, but Bootstrap has been used to place graphs relative to each other<br/>
-A Pie chart has been included as it is a requirement but I have also included an equivalent Bar chart with standardised colouring  per manufacturer so either can be used to adjust the filters.<br/>
-I opted for a vertical bar chart for the Publishers list and restricted it to display only the top 100, as there were too many, and a lot had no data.<br/>
-A Line chart was used to demonstrate the sales data of video games per year.<br/>
-An additional Bar chart was added to allow users to filter data by Genre.<br/>
+* A Pie chart has been included as it is a requirement but I have also included an equivalent Bar chart with standardised colouring per manufacturer so either can be used to adjust the filters.<br/>
+* I opted for a vertical bar chart for the Publishers list and restricted it to display only the top 100, as there were too many, and a lot had no data.<br/>
+* I decided to use a horizontal line chart to demonstrate the sales data of video games per year.<br/>
+* An additional Bar chart was added to allow users to filter data by Genre, which shows some interesting information.<br/>
 
-To Do:<br/>
-* Testing documentation
-* New yearly line chart for multiple line chart.
-* Add selection box for the above
+Testing<br>
+MAnual testing - Single page so I just did a check that the graphs all respond with each other. The reset Button also works, and the charts are all coloured as expected.<br>
+
+Mockup<br>
+* Initial mockup for mobile and tablet devices:<br/>
+![Mobile Markdown](./mockup.png)
 
 Data cleaning:<br/>
 * Restricted data to manufacturers Sega, Nintendo, Sony Mocrosoft, and NeoGeo as other data was present but blank.
