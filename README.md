@@ -20,7 +20,7 @@ MAnual testing - Single page so I just did a check that the graphs all respond w
 
 Mockup<br>
 * Initial mockup for mobile and tablet devices:<br/>
-![Mobile Markdown](./mockup.png)
+![Mobile Markdown](./mockup1.png)
 
 Data cleaning:<br/>
 * Restricted data to manufacturers Sega, Nintendo, Sony Mocrosoft, and NeoGeo as other data was present but blank.
